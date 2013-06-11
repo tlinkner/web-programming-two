@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<title>Click us!</title>
+<script src="javascripts/jquery.js" type="application/javascript"></script>
+<script type="application/javascript">
+
+/*
+ * 	Remove an element
+ */
+
+jQuery(document).ready(function() {
+   $("h1,p").click(function(){
+       alert($(this).text());
+   });
+});
+
+</script>
+</head>
+<body>
+
+<h1>Click us!</h1>
+
+<p>Me too!</p>
+
+</body>
+</html>

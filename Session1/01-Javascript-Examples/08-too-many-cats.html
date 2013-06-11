@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<title>Too many cats?</title>
+<script type="application/javascript">
+
+/*
+ * 	Function with a return value
+ */
+
+var cats = function(mycats) {
+  if (mycats > 2) {
+    message = 'Crazy Cat Lady';
+  } else if (mycats <= 2 && mycats > 0) {
+    message = 'Cat Lover';
+  } else {
+    message = 'Dog Person';
+  }
+  return message;
+}
+
+alert(cats(4));
+
+</script>
+</head>
+<body>
+
+<h1>Too many cats?</h1>
+
+</body>
+</html>

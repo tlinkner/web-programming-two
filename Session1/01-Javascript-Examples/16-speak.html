@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<title>Speak!</title>
+<script type="application/javascript">
+
+/*
+ * 	Prototype pointer (object inheritance)
+ */
+
+var mydog = {
+   name: 'Dog',
+   word: 'grrr',
+   speak: function() {
+       alert(this.word);
+       // alert(this.name + " says " + this.word);
+   }
+}
+
+var fido = Object.create(mydog);
+fido.name = "Fido";
+fido.word = "Bow Wow!";
+fido.speak();
+
+var spot = Object.create(mydog);
+spot.word = "Spot";
+spot.word = "Woof!";
+spot.speak();
+
+</script>
+</head>
+<body>
+
+<h1>Speak!</h1>
+
+</body>
+</html>

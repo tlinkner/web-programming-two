@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<title>Drawer</title>
+<script src="javascripts/jquery.js" type="application/javascript"></script>
+<script type="application/javascript">
+
+/*
+ * 	Animate with a callback function
+ */
+
+jQuery(document).ready(function() {
+  $("h1").click(function() {
+    $(".drawer").slideToggle();
+  });
+});
+
+</script>
+<style type="text/css" title="text/css">
+
+.drawer {
+  display: none;
+}
+
+</style>
+</head>
+<body>
+
+<h1>Drawer: (Click me)</h1>
+
+<ul class="drawer">
+	<li>Pens</li>
+	<li>Stapler</li>
+	<li>Paper</li>
+	<li>Calendar</li>
+</ul>
+
+
+</body>
+</html>

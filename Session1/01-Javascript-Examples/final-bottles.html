@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<title>Ninety-nine bottles</title>
+<script type="application/javascript">
+
+// bottles starts at 99
+// the loop continues as long as it is greater than 0
+// subtract one from bottles each loop (-- means subtract one from the number)
+for (bottles=100; bottles>0; bottles--) {
+  // Write the first line
+  document.write(bottles +" bottles of beer on the the wall, "+bottles+" bottles of beer<br>");
+  // this variable lets us know how many bottles are left
+  // after we take one down
+  fewerbottles = bottles - 1;
+  // Write the second line
+  document.write("Take one down, pass it around, "+fewerbottles+" bottles of beer on the wall<br>");
+  // Just to makw it look nice!
+  document.write("<hr>"); 
+}
+
+</script>
+</head>
+<body>
+
+
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<title>Speak!</title>
+<script type="application/javascript">
+
+/*
+ * 	Prototype pointer (new object based on another one)
+ */
+
+var mydog = {
+   word: 'grrr',
+   speak: function() {
+       alert(this.word);
+   }
+}
+
+var fido = Object.create(mydog);
+
+fido.speak();
+
+</script>
+</head>
+<body>
+
+<h1>Speak!</h1>
+
+</body>
+</html>

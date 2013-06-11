@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<title>Animate</title>
+<script src="javascripts/jquery.js" type="application/javascript"></script>
+<script type="application/javascript">
+
+/*
+ * 	Animate with a callback function
+ */
+
+jQuery(document).ready(function() {
+  $("h1").click(function() {
+    $(".mover").animate({
+      "opacity":0,
+      "margin": "100px"
+    },function(){
+      alert("Bye bye!");
+    });
+  });
+});
+
+</script>
+</head>
+<body>
+
+<h1>Animate: (Click me)</h1>
+
+<p class="mover">Move it.</p>
+
+
+</body>
+</html>
