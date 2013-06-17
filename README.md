@@ -34,6 +34,21 @@ This is a work in progress. The first class will be offered fall 2013.
 [**Google Chrome**](https://www.google.com/intl/en/chrome/browser/)
 
 
+### Add-ons, Extensions, and Libraries
+
+[**Chrome Web Developer Tools**](https://chrome.google.com/webstore/detail/web-developer/bfbameneiokkgbdmiekhjnmfkcnldhhm?hl=en)
+
+[**Normalize.css**](https://chrome.google.com/webstore/detail/web-developer/bfbameneiokkgbdmiekhjnmfkcnldhhm?hl=en)
+
+[**jQuery**](http://jquery.com)
+
+[**jQuery Cycle Plugin**](http://www.malsup.com/jquery/cycle/)
+
+### Reference Books and Websites
+
+[**Book: JavaScript & jQuery, by Jon Duckett**](http://www.wiley.com/WileyCDA/WileyTitle/productCd-1118531647.html) ( *available September 2013* )
+
+
 ### Additional Information
 
 The content of the class exercises is taken from [Project Gutenberg's](http://www.gutenberg.org) edition of [*Alice's Adventures in Wonderland*](http://www.gutenberg.org/ebooks/11), by Lewis Carroll. Illustrations by John Tenniel.
