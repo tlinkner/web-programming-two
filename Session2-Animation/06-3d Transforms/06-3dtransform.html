@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>3d Transform 06</title>
+<style>
+
+body {
+  margin: 3em;
+  font-family: Optima, Segoe, "Segoe UI", Candara, Calibri, Arial, sans-serif;
+}
+
+body {
+	perspective: 900px;
+}
+
+.foo {
+  position: relative;
+  width: 200px;
+  height: 200px;
+  transform-style: preserve-3d; /* important to keep object movin together */
+  transition: transform 1s ease-in-out;
+}
+
+.foo div {
+  position: absolute;
+  box-sizing: border-box;
+  padding: 1em;
+  width: 200px;
+  height: 200px;
+  backface-visibility: hidden;
+}
+
+.foo .front {
+  background: tomato;
+}
+.foo .back {
+  background: dodgerblue;
+  transform: rotateY( 180deg );
+}
+
+.foo:hover {
+  transform: rotateY( 180deg );
+}
+
+</style>
+</head>
+<body>
+
+<div class="foo">
+	<div class="front">Front</div>
+	<div class="back">Back</div>
+</div>
+
+</body>
+</html>

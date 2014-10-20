@@ -1,89 +1,96 @@
 More Web Programming: Beyond the Basics
 ===================
 
-This repository contains the class exercises for *More Web Programming: Beyond the Basics*, a three-session, nine-hour class offered by the [AS220 Media Arts](http://as220.org/mediaarts/about/) studio.
+This repository contains the workshop exercises for *More Web Programming: Beyond the Basics*, a three-session, nine-hour workshop offered by the [AS220 Media Arts](http://as220.org/mediaarts/about/) studio.
 
-In this class students will learn advanced CSS selectors, the basics of CSS transformations and animation, and how to construct a custom layout grid. 
+In this workshop students will learn advanced CSS selectors, the basics of CSS transformations and animation, and how to construct a custom layout grid. 
 
-This class builds on concepts learned in the *Introduction to Web Programming* class.
+This workshop builds on concepts learned in the *Introduction to Web Programming*.
 
 #### Session 1: Selectors
 
-Explanation of advanced CSS selectors and in-class practice exercises. Selectors will be used to control detailed typography, and to indicate the state of interface elements.
+Explanation of advanced CSS selectors and how to gain more control of your designs while maintaining clean, minimal, and semantically correct HTML markup.
 
 #### Session 2: Transformations and Animation
 
-Introduction to basic 2d and 3d transforms, animation syntax, and applications. 
+Introduction to basic 2d and 3d transforms, transitions, animation syntax, and applications. 
 
 #### Session: 3: Custom Layout Grid
 
-Step-by-step instruction for constructing a reusable grid using CSS floats and custom measurements. 
+Step-by-step instruction for constructing a custom reusable grid without relying on CSS frameworks. 
 
+&nbsp;
 
 ## Resources
+
 
 ### Tools
 
 [**Brackets Code Editor**](http://brackets.io)
 
+[**Brackets Emmet Extension**](https://github.com/emmetio/brackets-emmet)
+
+[**Brackets W3C Validation Extension**](https://github.com/cfjedimaster/brackets-w3cvalidation)
+
+[**Brackets Autoprefixer Extension**](https://github.com/mikaeljorhult/brackets-autoprefixer)
+
 [**Google Chrome**](https://www.google.com/intl/en/chrome/browser/)
 
-### Reference Books and Websites
+[**Google Chrome**](https://www.google.com/intl/en/chrome/browser/)
 
-[**Book: HTML & CSS by Jon Duckett**](http://www.htmlandcssbook.com)
+[**Animate.css**](https://daneden.github.io/animate.css/)
 
-[**W3C: HTML Markup Syntax**](http://www.w3.org/TR/html-markup/syntax.html)
+[**Recommended Brackets Settings**](https://gist.github.com/tlinkner/1ba3837067b15a16cbc4)
 
-[**W3C: HTML Elements by Function**](http://www.w3.org/TR/html-markup/elements-by-function.html)
+&nbsp;
 
-[**W3Schools: HTML Tutorial**](http://www.w3schools.com/html/default.asp)
+### Reference Links
 
-[**W3Schools: CSS Reference**](http://www.w3schools.com/cssref)
+&nbsp;
 
-[**Bootstrap Framework Documentation**](http://getbootstrap.com)
+##### Selectors
 
-### Continued Learning
+[**CSS Select Tutorial**](http://css.maxdesign.com.au/selectutorial/)
 
-[**AS220 Media Arts Web Programming: Beyond the Basics**](https://github.com/tlinkner/web-programming-two)
+[**Pseudo Element Roundup**](http://css-tricks.com/pseudo-element-roundup/) *by Chris Coyier*
 
-[**Lynda.com**](http://www.lynda.com)
+&nbsp;
 
-[**Team Treehouse**](http://teamtreehouse.com)
+##### Transforms and Animation
 
-[**Code School**](https://www.codeschool.com)
+[**Intro to CSS 3D transforms**](http://desandro.github.io/3dtransforms/) *by David DeSandro*
 
-[**Codecademy**](http://www.codecademy.com)
+[**CSS Animated Properties**](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_animated_properties?redirectlocale=en-US&redirectslug=CSS%2FCSS_animated_properties) *from MDN*
 
-### Help, Resources, and Blogs
+[**Using CSS Transforms**](https://developer.mozilla.org/en-US/docs/Web/Guide/CSS/Using_CSS_transforms) *from MDN*
 
-[**Stack Overflow**](http://stackoverflow.com/questions/tagged/css)
+[**The Guide To CSS Animation: Principles and Examples**](http://www.smashingmagazine.com/2011/09/14/the-guide-to-css-animation-principles-and-examples/) *from Smashing Magazine*
 
-[**Quora**](https://www.quora.com/CSS)
+&nbsp;
 
-[**W3C HTML Validator**](http://validator.w3.org)
+##### Layout
 
-[**W3C CSS Validator**](http://jigsaw.w3.org/css-validator)
+[**Learn CSS Layout**](http://learnlayout.com/index.html)
 
-[**Blog: CSS Tricks**](http://css-tricks.com)
+[**Don't Overthink it Grids**](http://css-tricks.com/dont-overthink-it-grids/) *by Chris Coyier*
 
-[**Blog: Smashing Magazine**](http://www.smashingmagazine.com)
+[**Use Cases for Calc**](http://css-tricks.com/a-couple-of-use-cases-for-calc/) *by Chris Coyier*
 
-[**Blog: CSS :nth Tester**](http://css-tricks.com/examples/nth-child-tester/)
+&nbsp;
 
+##### Methodology
 
-### Additional Information
+[**OOCSS Methodology**](https://github.com/stubbornella/oocss/wiki)
 
-The content of the class exercises is taken from [Project Gutenberg's](http://www.gutenberg.org) edition of [*Alice's Adventures in Wonderland*](http://www.gutenberg.org/ebooks/11), by Lewis Carroll. Illustrations by John Tenniel.
+[**BEM Methodology**](http://bem.info/method/)
 
-#### License for class content 
+[**SMACSS Methodology**](https://smacss.com)
 
-[MIT License](http://opensource.org/licenses/MIT)
+[**Single Responsibility Principle**](http://drewbarontini.com/articles/single-responsibility/) *by Drew Barontini*
 
-#### License for content from *Alice's Adventures in Wonderland* 
+[**Enduring CSS: Writing Style Sheets for Rapidly Changing, Long-Lived Projects**](http://benfrain.com/enduring-css-writing-style-sheets-rapidly-changing-long-lived-projects/) *by Ben Frain*
 
-<pre>
-Project Gutenberg's Alice's Adventures in Wonderland, by Lewis Carroll
+[**7 Habits of Highly Effective Media Queries**](http://bradfrostweb.com/blog/post/7-habits-of-highly-effective-media-queries/) *by Brad Frost*
 
-This eBook is for the use of anyone anywhere at no cost and with almost no restrictions whatsoever. You may copy it, give it away or re-use it under the terms of the Project Gutenberg License included with this eBook or online at www.gutenberg.org
-</pre>
+&nbsp;
 

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Animated Button 00</title>
+<meta charset="utf-8">
+<link href='http://fonts.googleapis.com/css?family=Arvo' rel='stylesheet' type='text/css'>
+<style type="text/css">
+
+body {
+    padding: 4em;
+}
+
+.btn {
+    font-family: Arvo, sans-serif;
+    position: relative;
+    display: inline-block;
+    line-height: 2em;
+    background: black;
+}
+
+.btn span {
+    display: block;
+    position: relative;
+    padding: .5em 1em;
+    color: white;
+    background: crimson;
+    white-space: pre;
+    transition: 500ms all;
+    transform: translate(.5em, -.5em);
+}
+
+a.btn {
+    text-decoration: none;
+}
+
+a:active.btn span {
+    transform: translate(0,0);
+}
+
+</style>
+</head>
+<body>
+
+<a href="#" class="btn"><span>Press me!</span></a>
+
+</body>
+</html>

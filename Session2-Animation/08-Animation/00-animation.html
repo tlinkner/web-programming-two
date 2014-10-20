@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Animation 00</title>
+<style>
+
+body {
+    margin: 3em;    
+}
+
+.ball {
+    width: 3em;
+    height: 3em;
+    border-radius: 50%;
+    background-color: tomato;  
+  -webkit-animation-name: roll;
+  -webkit-animation-duration: 2s;
+}
+
+@-webkit-keyframes roll {
+  from {-webkit-transform: translateX(0);}
+  to {-webkit-transform: translateX(400px);}
+}
+
+</style>
+</head>
+<body>
+    
+<div class="ball"></div>    
+    
+</body>
+</html>

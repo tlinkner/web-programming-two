@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Rainbow 02</title>
+<style>
+
+body {
+  padding: 3em;
+  font-family: Optima, Segoe, "Segoe UI", Candara, Calibri, Arial, sans-serif;
+  color: dimgray;
+}
+
+.rainbow {
+  padding: 0;
+  list-style: none;
+}
+
+.rainbow li {
+	padding: .5em;
+	color: white;
+	background-color: red;
+}
+
+.rainbow li ~ li {
+  background-color: orange;
+}
+
+.rainbow li ~ li ~ li {
+  background-color: yellow;
+}
+
+.rainbow li ~ li ~ li ~ li {
+  background-color: green;
+}
+
+.rainbow li ~ li ~ li ~ li ~ li {
+  background-color: blue;
+}
+
+.rainbow li ~ li ~ li ~ li ~ li ~ li  {
+  background-color: indigo;
+}
+
+.rainbow li ~ li ~ li ~ li ~ li ~ li ~ li  {
+  background-color: violet;
+}
+
+/* What happens if you add another item to the list? */
+ 
+</style>
+</head>
+<body>
+
+<h1>Rainbow</h1>
+
+<ul class="rainbow">
+    <li>Red</li>
+    <li>Orange</li>
+    <li>Yellow</li>
+    <li>Green</li>
+    <li>Blue</li>
+    <li>Indigo</li>
+    <li>Violet</li>
+</ul>                
+                                
+                                                                
+</body>
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<title>Adjacent Sibling Combinator</title>
+<link rel="stylesheet" href="styles/examples.css" media="screen">
+<style type="text/css">
+    
+h1 + p {
+  color: red;
+}
+
+</style>
+</head>
+<body>
+
+<h1 class="meta">Adjacent Sibling Combinator</h1>
+
+<p class="meta"><em>sibling</em> + <em>sibling</em> — more specific than the sibling combinator, matches sibling immediately following the first selector</p>
+
+<div id="example"></div>
+
+<!-- Begin example markup -->
+
+<h1>Lorem Ipsum</h1>    
+
+<p id="lorem">Lorem ipsum dolor sit amet, <a href="http://www.lipsum.com" target="_self">consectetur adipisicing elit</a>. Nihil totam nam, omnis quis quisquam repudiandae recusandae similique excepturi ea veritatis sapiente nisi ad quam possimus? Illum cumque similique at voluptate?</p>
+
+<h4 class="dolor">Laboriosam molestias</h4>
+
+<p class="dolor">Laboriosam molestias, rem id ex, exercitationem reprehenderit error dicta, praesentium sit autem, inventore! Quo beatae, repellendus nulla, exercitationem ut natus. Hic voluptatum dolores ad aliquid optio officia repellendus saepe iusto.</p>
+
+<div class="sit">
+
+	<h4>Ducimus tenetur</h4>
+
+	<p>Ducimus tenetur, veniam nam vero reprehenderit, officiis autem esse ipsum quam laudantium voluptate corrupti, repudiandae explicabo. Sequi autem, quod, unde reiciendis quidem minus, ducimus, incidunt atque totam fuga nemo facilis!</p>
+                                   
+	<ul>
+	    <li><a href="http://www.lipsum.com">Lorem ipsum dolor</a></li>
+	    <li class="ipsum"><a href="http://www.lipsum.com">Numquam, beatae eligendi</a></li>
+	    <li><a href="http://www.lipsum.com">Harum, excepturi, provident</a></li>
+	</ul>                                   
+
+	<ol class="ipsum">
+	    <li><a href="http://www.lipsum.com" target="_blank">Lorem ipsum dolor</a></li>
+	    <li><a href="http://www.lipsum.com" target="_blank">Tempore, in, veritatis</a></li>
+	    <li><a href="http://www.lipsum.com" target="_blank">Molestiae, odit, in</a></li>
+	</ol>	
+
+</div>
+
+<script type="text/javascript" src="scripts/example.js"></script>
+</body>
+</html>

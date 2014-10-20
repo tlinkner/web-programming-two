@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Animaiton 02</title>
+<style>
+
+body {
+    margin: 3em;    
+}
+
+.car {
+    position: relative;
+    width: 200px;
+    height: 60px;
+    background: transparent url("images/carbody.png") no-repeat top left;
+    -webkit-animation-name: drive;
+    -webkit-animation-duration: 2s;
+    -webkit-animation-timing-function: ease-out;
+    -webkit-animation-iteration-count: 1;
+}
+
+.wheel {
+    position: absolute;
+    width: 36px;
+    height: 36px;
+    background: transparent url("images/littlewheel.png") no-repeat top left;
+    border-radius: 50%;
+    -webkit-animation-name: roll;
+    -webkit-animation-duration: 2s;
+    -webkit-animation-timing-function: ease-out;
+    -webkit-animation-iteration-count: 1;
+}
+
+.wheel:first-child {
+    top: 38px;
+    left: 24px;
+}
+
+.wheel:last-child {
+    top: 38px;
+    left: 150px;
+}
+
+@-webkit-keyframes drive {
+    0% {-webkit-transform: translateX(0);}
+    100% {-webkit-transform: translateX(226px);}
+}
+
+@-webkit-keyframes roll {
+    0% {-webkit-transform: rotate(0);}
+    100% {-webkit-transform: rotate(720deg);}
+    /*
+       Circumference = pi * d;
+       113 = 3.14 * 36;
+       Distance = rotation * circumference
+       226 = 2 * 113;
+       Degrees = rotions * 360
+       720 = 2 * 360;
+    */
+}
+
+</style>
+</head>
+<body>
+    
+<div class="car">
+    <div class="wheel"></div>    
+    <div class="wheel"></div>    
+</div>
+    
+</body>
+</html>

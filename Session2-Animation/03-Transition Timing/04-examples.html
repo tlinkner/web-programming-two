@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Transition Timing Examples</title>
+<style>
+
+body {
+  margin: 3em;
+  font-family: Optima, Segoe, "Segoe UI", Candara, Calibri, Arial, sans-serif;
+}
+
+[class^="b"] {
+	width: 100px;
+	height: 100px;
+	background-color: tomato;
+}
+
+[class^="b"]:hover {
+	transform: translate(400px,0);
+}
+
+.b1 { transition: all 1s linear; }
+.b2 { transition: all 1s ease; }
+.b3 { transition: all 1s ease-in; }
+.b4 { transition: all 1s ease-out; }
+.b5 { transition: all 1s ease-in-out; }
+.b6 { transition: all 1s cubic-bezier(1,.01,.01,1); }
+
+</style>
+</head>
+<body>
+
+<h3>Linear</h3>
+
+<div class="b1"></div>    
+
+<h3>Ease</h3>
+
+<div class="b2"></div>    
+
+<h3>Ease-In</h3>
+
+<div class="b3"></div>    
+
+<h3>Ease-Out</h3>
+
+<div class="b4"></div>    
+
+<h3>Ease-In-Out</h3>
+
+<div class="b5"></div>    
+
+<h3>Cubic-Bezier</h3>
+
+<div class="b6"></div>    
+            
+</body>
+</html>

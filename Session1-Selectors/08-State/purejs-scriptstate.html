@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Pure Javascript State</title>
+<link rel="stylesheet" href="rsc/style.css" media="screen">
+<style>
+
+.fig > figcaption {
+  display: none;
+}
+
+.fig.active {
+  color: white;
+  background-color: cadetblue;
+}
+
+.fig.active > figcaption {
+  display: block;
+}
+
+</style>
+</head>
+<body>
+
+<h1>John Tenniel Gallery</h1>
+
+<div class="gallery">
+	<figure class="fig">
+		<img src="rsc/drinkme.jpg" alt="Drink Me">
+		<figcaption>
+			<h1 class="title">Drink Me</h1>
+			<div class="byline">Illustration by Sir John Tenniel</div>
+		</figcaption>
+	</figure>
+	<figure class="fig">
+		<img src="rsc/eatme.jpg" alt="Eat Me">
+		<figcaption>
+			<h1 class="title">Eat Me</h1>
+			<div class="byline">Illustration by Sir John Tenniel</div>
+		</figcaption>
+	</figure>
+	<figure class="fig">
+		<img src="rsc/rabbit.jpg" alt="White Rabbit">
+		<figcaption>
+			<h1 class="title">White Rabbit</h1>
+			<div class="byline">Illustration by Sir John Tenniel</div>
+		</figcaption>
+	</figure>
+</div>
+
+<script>
+(function(){
+    var figs = document.querySelectorAll(".fig");
+    var activeClass = "active";
+    for(var i=0; i<figs.length; i++){
+        figs[i].onclick = function(figs) {
+            return function () {
+                for (var c=0; c<figs.length; c++){
+                    if (figs[c] != this) {
+                        figs[c].classList.remove(activeClass);
+                    }
+                }
+                this.classList.toggle(activeClass);
+            }
+        }(figs);
+    }
+})();
+</script>
+</body>
+</html>

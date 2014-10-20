@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Caption Variation</title>
+<style>
+
+body {
+    margin: 3em;
+    background: whitesmoke;
+}
+
+figure {
+    position: relative;
+    width: 16em;
+	overflow: hidden;
+    box-shadow: 1px 1px 20px rgba(0,0,0,.3);
+}
+
+figure img {
+	max-width: 100%;
+	display: block;
+	position: relative;
+	-webkit-transition: -webkit-transform 0.5s;
+	transition: transform 0.5s;
+}
+    
+figure:hover img {
+	-webkit-transform: translateY(-50px);
+	-ms-transform: translateY(-50px);
+	transform: translateY(-50px);
+}
+
+figcaption {
+	position: absolute;
+	top: 0;
+	left: 0;
+	padding: 1em;
+	background: darkgoldenrod;
+	color: khaki;
+	height: 3em;
+	width: 100%;
+	top: auto;
+	bottom: 0;
+	opacity: 0;
+	-webkit-transform: translateY(100%);
+	-ms-transform: translateY(100%);
+	transform: translateY(100%);
+	-webkit-transition: -webkit-transform 0.5s, opacity 0.2s 0.3s;
+	transition: transform 0.5s, opacity 0.2s 0.3s;
+}
+
+figure:hover figcaption {
+	opacity: 1;
+	-webkit-transform: translateY(0px);
+	-ms-transform: translateY(0px);
+	transform: translateY(0px);
+	-webkit-transition: -webkit-transform 0.5s, opacity 0.2s;
+	transition: transform 0.5s, opacity 0.2s;
+}    
+    
+figcaption h3 {
+	margin: 0;
+	padding: 0;
+	color: white;
+}
+
+</style>
+</head>
+<body>
+
+<figure>
+	<img src="rsc/rabbit.jpg" alt="rabbit">
+	<figcaption>
+		<h3>The White Rabbit</h3>
+		<span>John Tenniel</span>
+	</figcaption>
+</figure>
+
+</body>
+</html>

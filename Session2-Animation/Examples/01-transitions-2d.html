@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>2D Transition Examples</title>
+<link rel="stylesheet" href="styles/examples.css" media="screen">
+<style>
+
+[class^="demo"] {
+  position: relative;
+  display: block;
+  margin-bottom: 2em;
+  padding: 2em;
+  border: 1px solid #CCC;
+  color: #444;
+  background-color: #EEE;
+  overflow: auto;
+}    
+    
+.original {
+  position: static;
+  top: 0;
+  left: 0;
+  width: 100px;
+  height: 100px;
+  background-color: rgba(255,0,0,.2);
+}
+    
+.transform {
+  position: absolute;
+  top: 2em;
+  left: 2em;
+  width: 100px;
+  height: 100px;
+  background-color: rgba(255,0,0,.6);
+}
+    
+    
+</style>
+</head>
+<body>
+
+<h1 class="meta">2D Transition Examples</h1>
+
+<h2 class="meta">Color</h2>
+<style class="example" scoped>
+.demo1 .transform { 
+    transition: background-color 1s;
+}
+.demo1 .transform:hover {
+	background-color: dodgerblue;
+}    
+</style>
+<p>Hover to view transition</p>
+<div class="demo1">
+    <div class="original"></div>    
+    <div class="transform"></div>
+</div>
+
+
+<h2 class="meta">Rotate</h2>
+<style class="example" scoped>
+.demo2 .transform { 
+    transition: all 1s;
+}
+.demo2 .transform:hover {
+    transform: rotate(90deg);
+}    
+</style>
+<p>Hover to view transition</p>
+<div class="demo2">
+    <div class="original"></div>    
+    <div class="transform"></div>
+</div>
+
+<h2 class="meta">Scale</h2>
+<style class="example" scoped>
+.demo3 .transform { 
+    transition: all 1s;
+}
+.demo3 .transform:hover {
+    transform:scale(.5,1.2);    
+}    
+</style>
+<p>Hover to view transition</p>
+<div class="demo3">
+    <div class="original"></div>    
+    <div class="transform"></div>
+</div>
+
+<h2 class="meta">Skew</h2>
+<style class="example" scoped>
+.demo4 .transform { 
+    transition: all 1s;
+}
+.demo4 .transform:hover {
+    transform: skew(30deg);    
+}    
+</style>
+<p>Hover to view transition</p>
+<div class="demo4">
+    <div class="original"></div>    
+    <div class="transform"></div>
+</div>
+
+<h2 class="meta">Translate</h2>
+<style class="example" scoped>
+.demo5 .transform { 
+    transition: all 1s;
+}
+.demo5 .transform:hover {
+    transform: translate(20px,20px);    
+}    
+</style>
+<p>Hover to view transition</p>
+<div class="demo5">
+    <div class="original"></div>    
+    <div class="transform"></div>
+</div>
+
+<script>
+(function() {
+    var allStyles = document.querySelectorAll('style.example');
+    for (var i=0; i<allStyles.length; i++) {
+        // wrapper
+        var demo = document.createElement("div");
+        // style node
+        var style = allStyles[i].cloneNode(true);
+        // code exmaple
+        var code = document.createElement("code");
+        code.innerHTML = style.innerHTML;
+        demo.appendChild(style);
+        demo.appendChild(code);
+        allStyles[i].parentNode.replaceChild(demo,allStyles[i]);
+    }
+})();    
+</script>
+</body>
+</html>

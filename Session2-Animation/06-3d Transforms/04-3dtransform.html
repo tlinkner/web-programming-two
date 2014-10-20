@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>3d Transform 04</title>
+<style>
+
+body {
+  margin: 3em;
+  font-family: Optima, Segoe, "Segoe UI", Candara, Calibri, Arial, sans-serif;
+}
+
+body {
+	perspective: 900px;
+}
+
+.foo {
+	float: left;
+	margin-left: 2em;
+    padding: 1em;
+    width: 200px;
+    height: 200px;
+    background-color: tomato;
+    transition: all 1s ease-in-out;
+}
+
+.foo:hover {
+    transform: rotateY(180deg);
+}
+
+</style>
+</head>
+<body>
+
+<div class="foo">Foo</div>    
+            
+</body>
+</html>

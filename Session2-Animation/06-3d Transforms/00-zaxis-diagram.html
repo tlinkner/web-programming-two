@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Z-Axis Diagram</title>
+<style>
+
+body {
+  margin: 3em;
+  font-family: Optima, Segoe, "Segoe UI", Candara, Calibri, Arial, sans-serif;
+}
+
+body {
+	perspective: 2000px;
+}
+
+[class^="f"] {
+	position: absolute;
+	left: 45%;
+	top: 300px;
+	box-sizing: border-box;
+    padding: 1em;
+    width: 200px;
+    height: 200px;
+    background-color: tomato;
+    opacity: .3;
+}
+
+.f1 { transform: translateZ(-600px); }
+.f2 { transform: translateZ(-300px); }
+.f3 { transform: translateZ(0); background-color: lime;}
+.f4 { transform: translateZ(300px); }
+.f5 { transform: translateZ(600px); }
+.f6 { transform: translateZ(900px); }
+
+</style>
+</head>
+<body>
+
+<div class="f1"></div>    
+<div class="f2"></div>    
+<div class="f3">Plane</div>    
+<div class="f4"></div>    
+<div class="f5"></div>    
+<div class="f6"></div>    
+            
+</body>
+</html>

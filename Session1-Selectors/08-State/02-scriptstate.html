@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Script State 02</title>
+<link rel="stylesheet" href="rsc/style.css" media="screen">
+<style>
+
+.fig.active {
+  color: white;
+  background-color: cadetblue;
+}
+
+</style>
+</head>
+<body>
+
+<h1>John Tenniel Gallery</h1>
+
+<div class="gallery">
+	<figure class="fig">
+		<img src="rsc/drinkme.jpg" alt="Drink Me">
+		<figcaption>
+			<h1 class="title">Drink Me</h1>
+			<div class="byline">Illustration by Sir John Tenniel</div>
+		</figcaption>
+	</figure>
+	<figure class="fig">
+		<img src="rsc/eatme.jpg" alt="Eat Me">
+		<figcaption>
+			<h1 class="title">Eat Me</h1>
+			<div class="byline">Illustration by Sir John Tenniel</div>
+		</figcaption>
+	</figure>
+	<figure class="fig">
+		<img src="rsc/rabbit.jpg" alt="White Rabbit">
+		<figcaption>
+			<h1 class="title">White Rabbit</h1>
+			<div class="byline">Illustration by Sir John Tenniel</div>
+		</figcaption>
+	</figure>
+</div>
+
+<script src="../../lib/jquery.min.js"></script>
+<script>
+$(function(){
+    var buttonsSelector = '.fig',
+        activeClass = 'active'
+        ;
+    $(buttonsSelector).click(function (e) {
+        e.stopPropagation();
+        $(buttonsSelector).not(this).removeClass(activeClass);
+        $(this).toggleClass(activeClass);
+    });
+}); </script>
+</body>
+</html>

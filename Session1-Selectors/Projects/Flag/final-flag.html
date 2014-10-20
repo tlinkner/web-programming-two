@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<title>Untitled</title>
+<style>
+/*
+ * color red: #C1133D
+ * color blue: #002663
+ * color white: #FFFFFF
+ * flag width: 370px
+ * flag height: 195px
+ * flag stripe height: 15px
+ * blue field width: 148px
+ * blue field height: 105px
+ */
+
+body {
+  padding: 4em;
+}
+
+.flag {
+  position: relative;
+  width: 370px;
+  height: 195px;
+  overflow: hidden;
+  box-shadow: 1px 1px 5px rgba(0,0,0,.5);
+}
+
+.flag .colonies {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.flag .colonies div {
+  height: 15px;
+}
+
+.flag .colonies div:nth-child(odd) {
+  background: #C1133D;
+}
+
+.flag .states {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 105px;
+  width: 148px;
+  background: #002663;
+}
+
+.flag .states div {
+  position: relative;
+  margin-left: 12px;
+  display: block;
+  width: 10px;
+  height: 10px;
+  float: left;
+  font-size: 10px;
+  line-height: 24px;
+  color: #fff;
+}
+
+.flag .states div:nth-child(11n) {
+	margin-right: 12px;
+}	
+.flag .states div:nth-child(11n-4) {
+	margin-left: 24px;
+}
+
+</style>
+</head>
+<body>
+
+
+<div class="flag">
+	<div class="colonies">
+		<div id="Province-of-New-Hampshire"></div>
+		<div id="Province-of-Massachusetts-Bay"></div>
+		<div id="Colony-of-Rhode-Island-and-Providence-Plantations"></div>
+		<div id="Connecticut-Colony"></div>
+		<div id="Province-of-New-York"></div>
+		<div id="Province-of-New-Jersey"></div>
+		<div id="Province-of-Pennsylvania"></div>
+		<div id="Delaware-Colony"></div>
+		<div id="Province-of-Maryland"></div>
+		<div id="Colony-and-Dominion-of-Virginia"></div>
+		<div id="Province-of-North-Carolina"></div>
+		<div id="Province-of-South-Carolina"></div>
+		<div id="Province-of-Georgia"></div>
+	</div>	
+	<div class="states">
+		<div id="Alabama">&#9733;</div>
+		<div id="Alaska">&#9733;</div>
+		<div id="Arizona">&#9733;</div>
+		<div id="Arkansas">&#9733;</div>
+		<div id="California">&#9733;</div>
+		<div id="Colorado">&#9733;</div>
+		<div id="Connecticut">&#9733;</div>
+		<div id="Delaware">&#9733;</div>
+		<div id="Florida">&#9733;</div>
+		<div id="Georgia">&#9733;</div>
+		<div id="Hawaii">&#9733;</div>
+		<div id="Idaho">&#9733;</div>
+		<div id="Illinois">&#9733;</div>
+		<div id="Indiana">&#9733;</div>
+		<div id="Iowa">&#9733;</div>
+		<div id="Kansas">&#9733;</div>
+		<div id="Kentucky">&#9733;</div>
+		<div id="Louisiana">&#9733;</div>
+		<div id="Maine">&#9733;</div>
+		<div id="Maryland">&#9733;</div>
+		<div id="Massachusetts">&#9733;</div>
+		<div id="Michigan">&#9733;</div>
+		<div id="Minnesota">&#9733;</div>
+		<div id="Mississippi">&#9733;</div>
+		<div id="Missouri">&#9733;</div>
+		<div id="Montana">&#9733;</div>
+		<div id="Nebraska">&#9733;</div>
+		<div id="Nevada">&#9733;</div>
+		<div id="New-Hampshire">&#9733;</div>
+		<div id="New-Jersey">&#9733;</div>
+		<div id="New-Mexico">&#9733;</div>
+		<div id="New-York">&#9733;</div>
+		<div id="North-Carolina">&#9733;</div>
+		<div id="North-Dakota">&#9733;</div>
+		<div id="Ohio">&#9733;</div>
+		<div id="Oklahoma">&#9733;</div>
+		<div id="Oregon">&#9733;</div>
+		<div id="Pennsylvania">&#9733;</div>
+		<div id="Rhode-Island">&#9733;</div>
+		<div id="South-Carolina">&#9733;</div>
+		<div id="South-Dakota">&#9733;</div>
+		<div id="Tennessee">&#9733;</div>
+		<div id="Texas">&#9733;</div>
+		<div id="Utah">&#9733;</div>
+		<div id="Vermont">&#9733;</div>
+		<div id="Virginia">&#9733;</div>
+		<div id="Washington">&#9733;</div>
+		<div id="West-Virginia">&#9733;</div>
+		<div id="Wisconsin">&#9733;</div>
+		<div id="Wyoming">&#9733;</div>
+	</div>	
+</div>
+
+
+</body>
+</html>

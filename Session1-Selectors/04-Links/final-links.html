@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Final Links</title>
+<style>
+a:link {
+  color: dodgerblue;
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+a:active {
+  color: tomato;
+}
+a:visited {
+  color: darkslategray;
+}
+
+a[rel="external"]::after {
+  content: " (external)";
+  color: red;
+}
+
+a[href^="http"]::before {
+  content: " →";
+}
+
+a[href*="about"]::after {
+  content: " (about link)";
+  color: red;
+}
+
+a[href$=".jpg"]::after {
+  content: " (JPG file)";
+  color: red;
+}
+
+</style>
+</head>
+<body>
+
+<p><a href="#">Regular Link</a></p>
+
+<p><a href="http://as220.org" rel="external">Link with relationship attribute</a></p>
+
+<p><a href="http://as220.org">External Link</a></p>
+
+<p><a href="http://as220.org/about">String in link</a></p>
+
+<p><a href="alice.jpg">JPG file</a></p>
+
+</body>
+</html>

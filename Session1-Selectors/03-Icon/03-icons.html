@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<title>Icons 04</title>
+<style>
+
+body {
+  padding: 3em;
+}
+
+img {
+  border: 1px dotted black;
+}
+
+[class^="icon-"]::before {
+  margin-right: .5em;
+  display: inline-block;
+  content: "";
+  width: 30px;
+  height: 30px;
+  vertical-align: middle;
+  background-color: pink;
+  background-image: url("images/icons.png");
+  background-position: 0 0;
+  background-repeat: no-repeat;
+}
+
+.icon-spades::before {
+}
+.icon-hearts::before {
+}
+.icon-diamonds::before {
+}
+.icon-clubs::before {
+}
+
+</style>
+</head>
+<body>
+
+<h1>Pseudoclass Icons</h1>
+
+<p>Icon sprite image: 30px x 120px</p>
+
+<img src="images/icons.png" alt="icons">
+
+<!-- Add icons via the before pseudoclass -->
+
+<p class="icon-spades">Spades</p>
+<p class="icon-hearts">Hearts</p>
+<p class="icon-diamonds">Diamonds</p>
+<p class="icon-clubs">Clubs</p>
+
+</body>
+</html>

@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Animation 01</title>
+<style>
+
+body {
+    margin: 3em;    
+}
+
+.wheel {
+    width: 100px;
+    height: 100px;
+    background: transparent url("images/bigwheel.png") no-repeat top left;
+    border-radius: 50%;
+    -webkit-animation-name: roll;
+    -webkit-animation-duration: 2s;
+    -webkit-animation-timing-function: ease-out;
+    -webkit-animation-iteration-count: 1;
+}
+
+@-webkit-keyframes roll {
+    0% {-webkit-transform: translateX(0) rotate(0);}
+    100% {-webkit-transform: translateX(314px) rotate(360deg);}
+    /*
+       Circumference = pi * d;
+       314 = 3.14 * 100;
+       Distance = rotation * circumference
+       314 = 1 * 314;    
+    */
+}
+
+</style>
+</head>
+<body>
+    
+<div class="wheel"></div>    
+    
+</body>
+</html>

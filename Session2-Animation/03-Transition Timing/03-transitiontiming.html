@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Transition Timing 03</title>
+<style>
+
+body {
+  margin: 3em;
+  font-family: Optima, Segoe, "Segoe UI", Candara, Calibri, Arial, sans-serif;
+}
+
+.foo {
+    padding: 1em;
+    width: 200px;
+    background-color: tomato;
+    transition: transform 1s;
+    transition-timing-function: cubic-bezier(1,.01,.01,1);
+}
+
+.foo:hover {
+	transform: translate(200px,0);
+}
+
+</style>
+</head>
+<body>
+
+<div class="foo">Foo</div>    
+            
+</body>
+</html>

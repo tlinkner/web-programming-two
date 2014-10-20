@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>UI State</title>
+<style>
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Lucida Grande", sans-serif; 
+}    
+
+#page {
+    position: relative;
+    box-sizing: border-box;
+    padding: 4em 2em;
+    -webkit-transition: all 500ms linear;
+    transition: all 500ms linear;
+}
+
+.active #page {
+    -webkit-transform: translateX(300px);
+    -ms-transform: translateX(300px);
+    transform: translateX(300px);
+}
+    
+#menu {
+    box-sizing: border-box;
+    position: fixed;
+    width: 300px;
+    color: white;
+    background: slategray;
+    -webkit-transform-origin: left;
+    -ms-transform-origin: left;
+    transform-origin: left;
+    -webkit-transition: all 500ms linear;
+    transition: all 500ms linear;
+    -webkit-transform: perspective(600px) rotateY(90deg);
+    transform: perspective(600px) rotateY(90deg);
+}
+
+.active #menu {
+    -webkit-transform: rotateY(0deg);
+    transform: rotateY(0deg);
+}    
+
+ul#menu {
+    margin: 0;
+    padding: 4em 0;
+    list-style: none;
+}    
+            
+#menu a {
+    margin: 0;
+    padding: 0;
+    display: block;
+    padding: 1em 2em;
+    text-decoration: none;
+    color: white;
+}                                                                                          
+
+#menu a:hover {
+    background: springgreen;
+}                                                                                                                       
+    
+#btn {
+    position: fixed;
+    top: 1em;
+    left: 2em;
+    padding: .5em 1em;
+    display: inline-block;
+    background: springgreen;
+    border-radius: 1em;
+}         
+
+#btn::before {
+    content: "▶";
+    margin-right: .5em;
+}
+
+.active #btn::before {
+    content: "◀";
+}                           
+
+</style>
+</head>
+<body>
+
+<ul id="menu">
+    <li><a href="#">Lorem</a></li>
+    <li><a href="#">ipsum</a></li>
+    <li><a href="#">Dolor</a></li>
+    <li><a href="#">Sit Amet</a></li>
+</ul>
+<div id="page">
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim corporis perferendis modi deleniti repudiandae dolorem, hic at possimus quisquam dolores sed, praesentium doloribus est perspiciatis asperiores itaque. Atque, quia, rerum.</p>
+    <p>Tempora eius quo dicta quibusdam nobis aperiam consequatur officiis saepe harum, sed temporibus nisi dolore laudantium dignissimos accusamus adipisci cupiditate. Iure nostrum ab, impedit corporis incidunt sit magnam, quisquam earum.</p>
+    <p>Nostrum, nesciunt, ad eos, reiciendis quam excepturi doloremque magni nam quia odio vero, quae eum! Eveniet non aliquam veniam dolore dignissimos doloribus neque dolores, quia fugit suscipit sint ab corporis.</p>
+</div>
+<div id="btn">MENU</div>
+                       
+<script src="../../lib/jquery.min.js"></script>
+<script>
+$(function(){
+    $("#btn").click(function() {
+        $("body").toggleClass("active");
+    });
+});
+</script>
+</body>
+</html>

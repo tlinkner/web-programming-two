@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Final Alice</title>
+<style>
+
+/*
+ The JavaScript adds the classes "drink" and "eat" to the body 
+ element when the buttons are clicked. 
+ Using CSS transformations and transitions, make Alice grow or 
+ shrink accordingly. 
+
+ Bonus challenge: visually indicate which button has been selected 
+ using the same state classes.
+*/
+    
+body {
+    font-family: Georgia, Times, "Times New Roman", serif;
+    padding: 4em;
+    text-align: center;
+}
+    
+.btn {
+    display: inline-block;
+    margin-right: .5em;
+    line-height: 2em;
+    padding: 0 1em;
+    color: white;
+    background: goldenrod;
+    border-radius: 1em;
+    text-transform: uppercase;
+    letter-spacing: .1em
+}
+
+a.btn {
+    text-decoration: none;
+}
+    
+#alice {
+    margin: 2em auto;
+    width: 10em;
+    transition: 1s all ease-out;
+    transform-origin: center top;
+    transform: scale(1);
+}
+
+figure img {
+    width: 100%;
+    height: auto;
+}
+
+.drink #alice {
+    transform: scale(.5);
+}
+    
+.eat #alice {
+    transform: scale(2);
+}
+
+</style>
+</head>
+<body>
+
+<a href="#" class="btn" id="drinkbtn">Drink Me!</a>
+<a href="#" class="btn" id="eatbtn">Eat Me!</a>
+
+<figure id="alice">
+    <img src="img/alice.jpg" alt="Alice">
+</figure>
+               
+<script>
+(function(){
+    var shrinkbtn = document.getElementById("drinkbtn");
+    var growbtn = document.getElementById("eatbtn");
+    shrinkbtn.onclick = function(e) {
+        e.preventDefault();
+        document.body.classList.remove("eat");
+        document.body.classList.toggle("drink");
+    }
+    eatbtn.onclick = function(e) {
+        e.preventDefault();
+        document.body.classList.remove("drink");
+        document.body.classList.toggle("eat");
+    }
+})();
+</script>            
+</body>
+</html>

@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Cube 03</title>
+<style>
+
+body {
+  margin: 3em;
+  font-family: Optima, Segoe, "Segoe UI", Candara, Calibri, Arial, sans-serif;
+}
+
+body {
+	perspective: 400px;
+}
+
+.cube {
+  margin: 100px auto;
+  position: relative;
+  width: 200px;
+  height: 200px;
+  transform-style: preserve-3d; /* important to keep object moving together */
+  transition: transform 2s ease-in-out;
+}
+
+.cube div {
+  position: absolute;
+  box-sizing: border-box;
+  padding: 1em;
+  width: 200px;
+  height: 200px;
+  background-color: rgba(255,99,71,.3);
+  border: 1px solid tomato;
+}
+
+.cube .front  { transform: rotateY(0)      translateZ(100px);}
+.cube .back   { transform: rotateY(180deg) translateZ(100px);}
+.cube .left   { transform: rotateY(90deg)  translateZ(100px);}
+.cube .right  { transform: rotateY(-90deg) translateZ(100px);}
+.cube .top    { transform: rotateX(90deg)  translateZ(100px);}
+.cube .bottom { transform: rotateX(-90deg) translateZ(100px);}
+
+</style>
+</head>
+<body>
+
+<div class="cube">
+	<div class="front">Front</div>
+	<div class="back">Back</div>
+	<div class="left">Left</div>
+	<div class="right">Right</div>
+	<div class="top">Top</div>
+	<div class="bottom">Bottom</div>
+</div>
+
+</body>
+</html>

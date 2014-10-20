@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Tropical Animation 01</title>
+<style>
+
+body {
+    margin: 0;   
+    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
+    font-weight: 300;
+}
+    
+header {
+    overflow: hidden;
+    height: 300px;
+    background-image: url("img/water.jpg"); /* 599px wide */
+	-webkit-animation: wateranim 8s infinite linear;
+}
+
+section {
+    padding: 1em 2em;
+    max-width: 980px;
+    margin: 0 auto;
+}
+
+h1 {
+    font-size: 3em;
+    line-height: 1em;
+    font-weight: 300;   
+    color: mediumturquoise;
+}
+
+.fish {
+    position: absolute;
+    top: 40px;
+    width: 200px;
+    height: auto;
+}
+    
+@keyframes wateranim {
+	from { background-position: 0 0; }
+	to   { background-position: -599px 0; }
+}
+
+@-webkit-keyframes wateranim {
+	from { background-position: 0 0; }
+	to   { background-position: -599px 0; }
+}
+    
+</style>
+</head>
+<body>
+    
+<header>
+    <img class="fish" src="img/fish.png" alt="Fish">    
+</header>    
+
+<section>
+    <h1>Tropical Animation</h1>
+</section>        
+    
+</body>
+</html>

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<title>Structural Pseudo-Class Variations</title>
+<link rel="stylesheet" href="styles/examples.css" media="screen">
+<style type="text/css">
+ 
+li:first-of-type {
+  color: red;
+}
+
+li:nth-child(2) {
+  color: blue;    
+}
+
+li:nth-child(3n) {
+  color: lime;    
+}
+    
+li:last-child {
+  color: orange;
+}
+    
+li:nth-child(odd) {
+  border-bottom: 1px solid silver;   
+}
+
+</style>
+</head>
+<body>
+
+<h1 class="meta">Structural Pseudo-Class Variations</h1>
+
+<p class="meta"><em>selector</em>:<em>first-of-type</em> — finds the first element matching the selector (to the left)</p>
+
+<p class="meta"><em>selector</em>:<em>nth-child(2)</em> — finds the second element matching the selector (to the left)</p>
+
+<p class="meta"><em>selector</em>:<em>nth-child(3n)</em> — finds every 3rd element matching the selector (to the left)</p>
+
+<p class="meta"><em>selector</em>:<em>last-child</em> — finds the last element matching the selector (to the left)</p>
+
+<p class="meta"><em>selector</em>:<em>nth-child(odd)</em> — finds every odd element matching the selector (to the left)</p>
+
+<p class="meta"><a href="13-selectors-structural-pseudoclass1.html">See simple variation</a></p>
+
+<div id="example"></div>
+
+<!-- Begin example markup -->
+
+<ul>
+    <li>Lorem</li>
+    <li>Cumque</li>
+    <li>Officia</li>
+    <li>Omnis</li>
+    <li>Nesciunt</li>
+    <li>Laborum</li>
+    <li>Ex</li>
+    <li>Similique</li>
+    <li>Illo</li>
+    <li>Possimus</li>
+</ul>
+
+
+<script type="text/javascript" src="scripts/example.js"></script>
+</body>
+</html>

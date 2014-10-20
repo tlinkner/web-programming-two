@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Caption 02</title>
+<style>
+
+body {
+    margin: 3em;
+    background: whitesmoke;
+}
+
+figure {
+    position: relative;
+    width: 16em;
+	background: darkgoldenrod;
+	overflow: hidden;
+    box-shadow: 1px 1px 20px rgba(0,0,0,.3);
+}
+
+figure img {
+	max-width: 100%;
+	display: block;
+	position: relative;
+	-webkit-transition: -webkit-transform 0.5s;
+	transition: transform 0.5s;
+    z-index: +1;
+}
+    
+figure:hover img {
+	-webkit-transform: translateY(-2em) scale(0.7);
+	-ms-transform: translateY(-2em) scale(0.7);
+	transform: translateY(-2em) scale(0.7);
+}
+
+figcaption {
+	position: absolute;
+	left: 0;
+	padding: 1em;
+	background: darkgoldenrod;
+	color: burlywood;
+	height: 3em;
+	width: 100%;
+	bottom: 0;
+}
+
+figcaption h3 {
+	margin: 0;
+	padding: 0;
+	color: white;
+}
+
+</style>
+</head>
+<body>
+
+<figure>
+	<img src="rsc/rabbit.jpg" alt="rabbit">
+	<figcaption>
+		<h3>The White Rabbit</h3>
+		<span>John Tenniel</span>
+	</figcaption>
+</figure>
+
+</body>
+</html>

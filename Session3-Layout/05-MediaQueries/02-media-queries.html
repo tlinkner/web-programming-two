@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Media Queries 02</title>
+<style>
+
+body {
+    margin: 0;
+    padding: 2em;
+    background: gainsboro;
+}
+
+aside {
+    box-sizing: border-box;
+    padding: 1em;
+    background: beige;
+}
+
+@media (min-width: 600px) {
+    body {
+        background: lime;
+    }
+    article {
+        margin-right: 1em;
+        float: left;
+        width: calc(65% - 1em);
+    }
+    aside {
+        float: right;
+        width: 35%;
+    }
+}
+
+@media (min-width: 900px) {
+    body {
+        background: yellow;
+    }
+    article {
+        margin-right: 1em;
+        float: left;
+        width: calc(80% - 1em);
+    }
+    aside {
+        float: right;
+        width: 20%;
+    }
+}
+    
+</style>
+</head>
+<body>
+
+<div class="page">
+    <h1>Media Queries</h1>    
+    <article>
+        <h2>Lorem ipsum dolor</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab praesentium, officiis recusandae deserunt aliquid, rerum enim totam, adipisci iusto nulla nostrum quaerat et rem ex! Facere sed autem natus quaerat!</p>
+        <p>Delectus unde suscipit, quo illum cum nobis adipisci! Sunt illo necessitatibus quaerat modi quo inventore provident, adipisci consequuntur quos facere culpa temporibus, labore asperiores odio. Suscipit vitae atque pariatur nisi.</p>
+        <p>Cupiditate fugit alias, architecto quam unde voluptates facere, a est et odio aperiam, soluta veniam culpa ut vitae ratione perspiciatis quod deleniti fuga ad provident id aspernatur perferendis quis! Sunt!</p>
+    </article>
+    <aside>
+        <h4>Lorem ipsum dolor</h4>
+        <ul>
+            <li>Lorem ipsum dolor</li>
+            <li>In, aliquam, aut</li>
+            <li>Ratione doloribus perspiciatis</li>
+        </ul>
+    </aside>
+</div>    
+    
+</body>
+</html>

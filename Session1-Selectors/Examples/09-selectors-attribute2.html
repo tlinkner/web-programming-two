@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<title>Attribute Selector Variations</title>
+<link rel="stylesheet" href="styles/examples.css" media="screen">
+<style type="text/css">
+    
+a[target] {
+    color: red;
+}
+
+a[href*="lipsum"] {
+    color: orange;
+}
+
+a[href^="http://en"] {
+    color: purple;
+}
+
+a[href$="/about"] {
+    color: silver;
+}
+
+a[rel~="next"] {
+    color: magenta;
+}
+
+a[target="_self"] {
+    color: green;
+}
+
+
+</style>
+</head>
+<body>
+
+<h1 class="meta">Attribute Selector Variations</h1>
+
+<p class="meta"><em>selector</em>[<em>attribute</em>] — matches elements that have the attribute</p>
+
+<p class="meta"><em>selector</em>[<em>attribute</em>*="<em>string</em>"] — matches elements that have the string in the attribute value</p>
+
+<p class="meta"><em>selector</em>[<em>attribute</em>^="<em>string</em>"] — matches any elements that have a value that begins with the string</p>
+
+<p class="meta"><em>selector</em>[<em>attribute</em>$="<em>string</em>"] — matches any elements that have a value that ends with the string</p>
+
+<p class="meta"><em>selector</em>[<em>attribute</em>~="<em>string</em>"] — matches any elements that have the string within a space separated list of values in the attribute</p>
+
+<p class="meta"><em>selector</em>[<em>attribute</em>="<em>string</em>"] — matches any elements that have the exact string within the attribute</p>
+
+<p class="meta"><a href="10-selectors-attribute1.html">See simple variation</a></p>
+
+<div id="example"></div>
+
+<!-- Begin example markup -->
+
+<ul>
+    <li><a href="http://www.lipsum.com" target="_self">Lorem ipsum dolor</a></li>
+    <li class="ipsum"><a href="http://as220.org" target="_blank">Numquam, beatae eligendi</a></li>
+    <li class="ipsum"><a href="http://www.lipsum.com/about" target="_blank">Lorem Ipsum is simply dummy text</a></li>
+    <li class="ipsum"><a href="http://en.lipsum.com" target="_blank">Suspendisse luctus dui a erat</a></li>
+    <li class="ipsum"><a href="http://es.lipsum.com" target="_blank">Lorem Ipsum es simplemente el texto</a></li>
+    <li><a href="http://as220.org">Harum, excepturi, provident</a></li>
+    <li class="ipsum"><a href="http://as220.org" rel="next">Duis quis mauris luctus</a></li>
+</ul>                                   
+
+<script type="text/javascript" src="scripts/example.js"></script>
+</body>
+</html>
