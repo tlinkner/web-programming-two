@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Perspective Origin</title>
+<style>
+
+body {
+  margin: 3em;
+  font-family: Optima, Segoe, "Segoe UI", Candara, Calibri, Arial, sans-serif;
+}
+
+.wrap {
+	padding-top: 50px;
+	padding-bottom: 50px;
+	perspective: 900px; /* Adjust this number */
+	perspective-origin: bottom right; /* Try: -10% 50% */
+	overflow: auto;
+	background: #EEE;
+}
+
+.foo > div {
+	box-sizing: border-box;
+	float: left;
+    padding: 1em;
+    width: 100px;
+    height: 100px;
+    background-color: tomato;
+    transform: rotateY(90deg);
+}
+
+</style>
+</head>
+<body>
+
+<div class="wrap">
+	<div class="foo">
+		<div>Foo</div>
+	</div>    
+	<div class="foo">
+		<div>Foo</div>
+	</div>    
+	<div class="foo">
+		<div>Foo</div>
+	</div>    
+	<div class="foo">
+		<div>Foo</div>
+	</div>    
+	<div class="foo">
+		<div>Foo</div>
+	</div>    
+	<div class="foo">
+		<div>Foo</div>
+	</div>    
+	<div class="foo">
+		<div>Foo</div>
+	</div>    
+</div>
+            
+</body>
+</html>

@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Final Hey Diddle Diddle</title>
+<link href='http://fonts.googleapis.com/css?family=Fontdiner+Swanky' rel='stylesheet' type='text/css'>
+<style>
+body {
+    margin: 0;
+    padding: 0;
+    background: black;
+}
+
+header {
+    height: 420px;
+    overflow: hidden;
+    background-color: rgb(60,50,70);
+}
+
+h1 {
+    font-family: "Fontdiner Swanky", cursive;
+    letter-spacing: 3px;
+}
+    
+article {
+    position: relative;
+    line-height: 2em;
+    color: rgb(200,170,100);
+    text-align: center;
+}
+
+article div {
+    margin: 0 auto;
+    max-width: 320px;
+}
+
+article::before {
+    display: block;
+    position: absolute;
+    content: "";
+    top: -160px;
+    width: 100%;
+    height: 160px;
+    background: transparent url("rsc/trees.png") repeat-x; 
+}
+
+.moon {
+    position: relative;
+    margin-left: -160px;
+    left: 50%;
+    width: 320px;
+    top: 200px;
+}
+
+.cow {
+    position: absolute;
+    margin-left: -130px;    
+    left: 50%;
+    width: 260px;
+    top: -160px;
+    -webkit-transform-origin: 50% 320px;
+    -webkit-animation: jump 5s infinite ease-in-out;
+}
+
+@-webkit-keyframes jump {
+    /* Start at the bottom so the easing looks better */
+    0% {-webkit-transform: rotate(180deg);}
+    /* If end of rotation is greater than beginning it will rotate clockwise, if not it will go the opposite direction. */
+    100% {-webkit-transform: rotate(540deg);}
+}
+
+</style>
+</head>
+<body>
+
+<header>
+    <div class="moon">
+        <img src="rsc/moon.png" alt="Moon">    
+        <div class="cow">
+            <img src="rsc/cow.png" alt="Cow">
+        </div>    
+    </div>
+</header>
+
+<article class="poem">
+    <div>
+        <h1>Hey Diddle Diddle</h1>
+        <p>Hey diddle diddle,<br>
+        The Cat and the fiddle,<br>
+        The Cow jumped over the moon.<br>
+        The little Dog laughed,<br>
+        To see such sport,<br>
+        And the Dish ran away with the Spoon.</p>
+    </div>
+</article>
+
+</body>
+</html>

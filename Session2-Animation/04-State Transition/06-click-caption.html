@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<title>Final Caption</title>
+<title>Click Caption 06</title>
 <style>
 
 body {
@@ -27,7 +27,7 @@ figure img {
     z-index: +1;
 }
     
-figure:hover img {
+figure.active img {
 	-webkit-transform: translateY(-2em) scale(0.7);
 	-ms-transform: translateY(-2em) scale(0.7);
 	transform: translateY(-2em) scale(0.7);
@@ -55,6 +55,14 @@ figcaption h3 {
 <body>
 
 <figure>
+	<img src="rsc/rabbit.jpg" alt="rabbit">
+	<figcaption>
+		<h3>The White Rabbit</h3>
+		<span>John Tenniel</span>
+	</figcaption>
+</figure>
+
+<figure class="active">
 	<img src="rsc/rabbit.jpg" alt="rabbit">
 	<figcaption>
 		<h3>The White Rabbit</h3>

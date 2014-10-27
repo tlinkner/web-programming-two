@@ -42,6 +42,10 @@ Step-by-step instruction for constructing a custom reusable grid without relying
 
 [**Recommended Brackets Settings**](https://gist.github.com/tlinkner/1ba3837067b15a16cbc4)
 
+[**Cubic Bezier Tool**](http://cubic-bezier.com)
+
+[**Can I Use ____?**](http://caniuse.com)
+
 &nbsp;
 
 ### Reference Links

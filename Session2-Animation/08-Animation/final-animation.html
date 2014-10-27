@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<title>Final Animaiton</title>
+<title>Animaiton 03</title>
 <style>
 
 body {
@@ -15,15 +15,10 @@ body {
     height: 60px;
     background: transparent url("images/carbody.png") no-repeat top left;
     -webkit-animation-name: drive;
-    animation-name: drive;
     -webkit-animation-duration: 2s;
-    animation-duration: 2s;
     -webkit-animation-timing-function: ease-out;
-    animation-timing-function: ease-out;
     -webkit-animation-iteration-count: 1;
-    animation-iteration-count: 1;
     -webkit-animation-fill-mode: forwards;
-    animation-fill-mode: forwards;
 }
 
 .wheel {
@@ -33,15 +28,10 @@ body {
     background: transparent url("images/littlewheel.png") no-repeat top left;
     border-radius: 50%;
     -webkit-animation-name: roll;
-    animation-name: roll;
     -webkit-animation-duration: 2s;
-    animation-duration: 2s;
     -webkit-animation-timing-function: ease-out;
-    animation-timing-function: ease-out;
     -webkit-animation-iteration-count: 1;
-    animation-iteration-count: 1;
     -webkit-animation-fill-mode: forwards;
-    animation-fill-mode: forwards;
 }
 
 .wheel:first-child {
@@ -55,31 +45,13 @@ body {
 }
 
 @-webkit-keyframes drive {
-    0% {-webkit-transform: translateX(0);transform: translateX(0);}
-    100% {-webkit-transform: translateX(226px);transform: translateX(226px);}
-}
-
-@keyframes drive {
-    0% {-webkit-transform: translateX(0);transform: translateX(0);}
-    100% {-webkit-transform: translateX(226px);transform: translateX(226px);}
+    0% {-webkit-transform: translateX(0);}
+    100% {-webkit-transform: translateX(226px);}
 }
 
 @-webkit-keyframes roll {
-    0% {-webkit-transform: rotate(0);transform: rotate(0);}
-    100% {-webkit-transform: rotate(720deg);transform: rotate(720deg);}
-    /*
-       Circumference = pi * d;
-       113 = 3.14 * 36;
-       Distance = rotation * circumference
-       226 = 2 * 113;
-       Degrees = rotions * 360
-       720 = 2 * 360;
-    */
-}
-
-@keyframes roll {
-    0% {-webkit-transform: rotate(0);transform: rotate(0);}
-    100% {-webkit-transform: rotate(720deg);transform: rotate(720deg);}
+    0% {-webkit-transform: rotate(0);}
+    100% {-webkit-transform: rotate(720deg);}
     /*
        Circumference = pi * d;
        113 = 3.14 * 36;

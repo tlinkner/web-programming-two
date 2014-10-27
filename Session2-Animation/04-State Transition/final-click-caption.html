@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<title>Final Caption</title>
+<title>Caption 02</title>
 <style>
 
 body {
@@ -27,7 +27,7 @@ figure img {
     z-index: +1;
 }
     
-figure:hover img {
+figure.active img {
 	-webkit-transform: translateY(-2em) scale(0.7);
 	-ms-transform: translateY(-2em) scale(0.7);
 	transform: translateY(-2em) scale(0.7);
@@ -62,5 +62,15 @@ figcaption h3 {
 	</figcaption>
 </figure>
 
+<script>
+(function(){
+    var figs = document.querySelectorAll("figure");
+    for(var i=0; i<figs.length; i++){
+        figs[i].onclick = function() {
+            this.classList.toggle("active");
+        };
+    }
+})();    
+</script>
 </body>
 </html>
