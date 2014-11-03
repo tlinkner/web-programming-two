@@ -96,6 +96,8 @@ Step-by-step instruction for constructing a custom reusable grid without relying
 
 [**7 Habits of Highly Effective Media Queries**](http://bradfrostweb.com/blog/post/7-habits-of-highly-effective-media-queries/) *by Brad Frost*
 
+[**Atomic Design**](http://bradfrost.com/blog/post/atomic-web-design/) *by Brad Frost*
+
 &nbsp;
 
 ##### Tools
