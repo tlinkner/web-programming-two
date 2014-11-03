@@ -1,0 +1,161 @@
+/* Text Styles */
+
+body {
+    font-family: 'Lucida Grande', 'Lucida Sans Unicode', 'Lucida Sans', Geneva, Verdana, sans-serif;
+    font-size: 16px;
+    line-height: 1.6em;
+}
+
+h1, h2, h3 {
+    margin-top: 0;
+    line-height: 1em;
+    color: tomato;
+}
+
+h1 {
+    font-size: 4em;
+    font-weight: normal;
+}
+
+h2 {
+    font-size: 3em;  
+    font-weight: normal;
+}
+
+a {
+    color: tomato;
+    text-decoration: none;
+}
+
+a:hover {
+    border-bottom: 1px dotted tomato;
+}
+
+th, td {
+    padding: .5em;
+    border-right: 1px solid gainsboro;
+    border-bottom: 1px dashed gainsboro;
+}
+
+th {
+    color: tomato;
+}
+
+th:last-child, td:last-child {
+    border-right: 0;
+}
+
+tr:last-child td {
+    border-bottom: 0;
+}
+
+hr {
+    margin: 1.6em 0;
+    height: 1px;
+    border: 0;
+    border-bottom: 1px dashed tomato;
+}
+
+
+/* Media */
+
+.media {
+    overflow: auto;
+    background: gainsboro;
+    margin-bottom: 1.4em;
+    padding: 1em;
+    font-size: .875em;
+}
+
+.media-left .media-image {
+    float: left;
+    margin-right: 1em;
+}
+
+.media-right .media-image {
+    float: right;
+    margin-left: 1em;
+}
+
+.media-body {
+    overflow: auto;
+}
+
+.media h3 {
+    margin-top: 0;
+}
+
+.media:hover {
+    background: tomato;
+}
+
+.media:hover * {
+    color: white;
+}
+
+
+/* Nav Styles */
+
+[class*="nav-"] ul {
+    list-style: none;
+    padding: 0;
+}
+
+[class*="nav-"] a {
+    display: block;
+    padding: .5em 1em;
+    color: white;
+    background: tomato;
+}
+
+[class*="nav-"] a:hover {
+    color: tomato;
+    background: gainsboro;
+    border: 0;
+}
+
+.nav-top {
+    background: tomato;
+}
+
+.nav-top li {
+    display: inline-block;
+}
+
+/* Layout */
+
+.wrap {
+    margin: 0 auto;
+    max-width: 800px;
+}    
+
+.header {
+    padding: .5em;
+    background: gainsboro;
+}    
+    
+.footer {
+    padding: .5em;
+    background: gainsboro;
+}    
+    
+.content, .aside {
+    padding: .5em;
+}
+        
+@media (min-width: 800px) {
+    .nav {
+        width: 20%;
+        float: left;
+    }
+    .aside {
+        width: 20%;
+        float: right;
+    }
+    .content {
+        padding: .5em 1em;
+        margin-left: 20%;
+        margin-right: 20%;
+    }
+}
+   

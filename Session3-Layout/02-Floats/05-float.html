@@ -2,12 +2,25 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<title>Page 02</title>
+<title>Float 05</title>
 <link rel="stylesheet" href="css/style.css">
 <style>
     
 .wrap {
+    margin: 0 auto;
     max-width: 700px;    
+}
+
+.box {
+}
+
+.red {
+    float: right;
+}
+    
+/* Clear immediately after */
+.green + * {
+    clear: both;   
 }
     
 </style>
@@ -15,6 +28,13 @@
 <body>
 
 <div class="wrap">
+   
+   <div class="red box">Red</div>
+   
+   <div class="blue box">Blue</div>
+   
+   <div class="green box">Green</div>
+   
     <h1>Lorem ipsum dolor.</h1>    
     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis reiciendis temporibus vel totam consectetur neque modi dolor harum numquam, ratione reprehenderit ea porro nesciunt eaque libero maxime vero quas mollitia.</p>
     <p>Ipsum, esse accusantium alias, reprehenderit perferendis nostrum possimus, facere neque voluptatum aperiam, dolorem atque architecto rem explicabo fugit cumque quos cum consequatur quas laudantium optio praesentium ratione autem? Reprehenderit, quas.</p>

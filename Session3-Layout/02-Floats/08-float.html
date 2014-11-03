@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Float 08</title>
+<link rel="stylesheet" href="css/style.css">
+<style>
+    
+.wrap {
+    margin: 0 auto;
+    max-width: 700px;    
+    overflow: auto;
+}
+
+.red, .blue {
+    float: right;
+}
+
+.green {
+    float: left;    
+}
+    
+/* Clear immediately after */
+.green + * {
+    clear: both;   
+}
+    
+</style>
+</head>
+<body>
+
+<div class="wrap">
+   
+   <div class="red box">Red</div>
+   
+   <div class="blue box">Blue</div>
+   
+   <div class="green box">Green</div>
+   
+</div>
+                                    
+</body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Media Queries 02</title>
+<style>
+
+body {
+    margin: 0;
+    padding: 2em;
+    background: gainsboro;
+}
+
+.md {display: none;}
+.lg {display: none;}
+
+@media (min-width: 600px) {
+    body {
+        background: dodgerblue;
+    }
+    .sm {display: none;}
+    .md {display: block;}
+}
+
+@media (min-width: 900px) {
+    body {
+        background: tomato;
+    }
+    .md {display: none;}
+    .lg {display: block;}
+}
+    
+</style>
+</head>
+<body>
+
+<div class="page">
+    <h1>Media Queries</h1>    
+    <div class="lg">Wide Content</div>
+    <div class="md">Medium Contnet</div>
+    <div class="sm">Small Content</div>
+</div>    
+    
+</body>
+</html>

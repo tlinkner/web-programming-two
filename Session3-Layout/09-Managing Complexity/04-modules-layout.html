@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Modules: Layout 04</title>
+<link rel="stylesheet" href="css/style.css">
+<style>
+
+.wrap {
+    margin: 0 auto;
+    max-width: 800px;
+}    
+
+.header {
+    padding: .5em;
+    background: gainsboro;
+}    
+    
+.footer {
+    padding: .5em;
+    background: gainsboro;
+}    
+    
+.content {
+    padding: .5em;
+}
+        
+@media (min-width: 800px) {
+    .nav {
+        width: 20%;
+        float: left;
+    }
+    .aside {
+         width: 20%;
+        float: right;
+    }
+    .content {
+        margin-left: 20%;
+        margin-right: 20%;
+    }
+}
+        
+</style>
+</head>
+<body>
+
+<div class="wrap">
+    <header class="header">Header</header>
+	<div class="body">
+       <div class="nav">Nav</div>
+       <div class="aside">Aside</div>
+       <div class="content">Content</div>
+	</div>
+    <header class="footer">Footer</header>
+</div>
+                                    
+</body>
+</html>

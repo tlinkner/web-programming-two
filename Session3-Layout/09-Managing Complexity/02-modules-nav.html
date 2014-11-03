@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Modules: Nav 02</title>
+<style>
+
+body {
+    margin: 3em;
+    font-family: 'Lucida Grande', 'Lucida Sans Unicode', 'Lucida Sans', Geneva, Verdana, sans-serif;
+    font-size: 16px;
+    line-height: 1.6em;
+}
+
+a {
+    color: tomato;
+    text-decoration: none;
+}
+
+a:hover {
+    border-bottom: 1px dotted tomato;
+}
+
+[class*="nav-"] ul {
+    list-style: none;
+    padding: 0;
+}
+
+[class*="nav-"] a {
+    display: block;
+    padding: .5em 1em;
+    color: white;
+    background: tomato;
+}
+
+[class*="nav-"] a:hover {
+    color: tomato;
+    background: gainsboro;
+    border: 0;
+}
+
+.nav-top {
+    background: tomato;
+}
+
+.nav-top li {
+    display: inline-block;
+}
+
+hr {
+    margin: 1.6em 0;
+    height: 1px;
+    border: 0;
+    border-bottom: 1px dashed tomato;
+}
+
+</style>
+</head>
+<body>
+
+<nav class="nav-top">
+    <ul>
+        <li><a href="#">Lorem</a></li>
+        <li><a href="#">Tempore</a></li>
+        <li><a href="#">Minus</a></li>
+        <li><a href="#">Voluptatum</a></li>
+        <li><a href="#">Nesciunt</a></li>
+    </ul>
+</nav>
+
+<hr>
+    
+<nav class="nav-side">
+    <ul>
+        <li><a href="#">Lorem</a></li>
+        <li><a href="#">Tempore</a></li>
+        <li><a href="#">Minus</a></li>
+        <li><a href="#">Voluptatum</a></li>
+        <li><a href="#">Nesciunt</a></li>
+    </ul>
+</nav>
+                
+</body>
+</html>

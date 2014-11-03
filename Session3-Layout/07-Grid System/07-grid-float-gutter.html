@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Grid Float Gutter 07</title>
+<link rel="stylesheet" href="css/style.css">
+<style>
+
+.grid {
+    overflow: auto;
+    background: gainsboro;
+}
+
+[class*='col-'] {
+    margin-bottom: 1em;
+    /* Balance outside gutter */
+    margin-left: 2%;
+    margin-right: 2%;
+    box-sizing: border-box;
+    padding: .5em;
+    float: left;
+    min-height: 2em;
+    background: yellow;
+}
+
+[class*='col-']:last-child {
+    margin-right: 0;
+    background: lime;
+}
+
+/* gutter = 4% */
+/* width =  (100% / columns) - gutter */
+.col-1-of-12 { width: 4.32%; }
+.col-1-of-6 { width:  12.65%; }
+.col-1-of-4 { width:  21%; }
+.col-1-of-3 { width:  29.32%; }
+.col-1-of-2 { width:  46%; }
+.col-1-of-1 { width:  96%; }
+
+</style>
+</head>
+<body>
+
+<div class="grid">
+    <div class="col-1-of-12">1/12</div>
+    <div class="col-1-of-12">1/12</div>
+    <div class="col-1-of-12">1/12</div>
+    <div class="col-1-of-12">1/12</div>
+    <div class="col-1-of-12">1/12</div>
+    <div class="col-1-of-12">1/12</div>
+    <div class="col-1-of-12">1/12</div>
+    <div class="col-1-of-12">1/12</div>
+    <div class="col-1-of-12">1/12</div>
+    <div class="col-1-of-12">1/12</div>
+    <div class="col-1-of-12">1/12</div>
+    <div class="col-1-of-12">1/12</div>
+</div>
+<div class="grid">
+    <div class="col-1-of-6">1/6</div>
+    <div class="col-1-of-6">1/6</div>
+    <div class="col-1-of-6">1/6</div>
+    <div class="col-1-of-12">1/12</div>
+    <div class="col-1-of-12">1/12</div>
+    <div class="col-1-of-12">1/12</div>
+    <div class="col-1-of-12">1/12</div>
+    <div class="col-1-of-12">1/12</div>
+    <div class="col-1-of-12">1/12</div>
+</div>
+<div class="grid">
+    <div class="col-1-of-3">1/3</div>
+    <div class="col-1-of-3">1/3</div>
+    <div class="col-1-of-3">1/3</div>
+</div>                     
+<div class="grid">
+    <div class="col-1-of-2">1/2</div>
+    <div class="col-1-of-2">1/2</div>
+</div>                     
+<div class="grid">
+    <div class="col-1-of-1">1/1</div>
+</div>                     
+
+
+</body>
+</html>

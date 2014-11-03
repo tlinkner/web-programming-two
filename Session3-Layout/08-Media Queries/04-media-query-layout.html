@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Grid Layout 10</title>
+<link rel="stylesheet" href="css/style.css">
+<style>
+
+.grid {
+    overflow: auto;
+}
+
+header {
+    box-sizing: border-box;
+    text-align: center;
+    background: gainsboro;
+}
+
+footer {
+    box-sizing: border-box;
+    padding: .5em;
+    background: gainsboro;
+}
+
+.col {
+    padding-bottom: 1em;
+    /* Balance outside gutter */
+    padding-left: .5em;
+    padding-right: .5em;
+    box-sizing: border-box;
+    padding: .5em;
+    min-height: 2em;
+}
+
+[class*='col-'] [class*='col-'] {
+    background: pink;
+}
+
+@media (min-width: 600px) {
+    .col { float: left; }
+    .sidenav { width: 25%; }
+    .content { width: 75%; }
+    .header, .footer { width: 100%; }
+}
+
+</style>
+</head>
+<body>
+
+<div class="grid">
+    <header class="header col">
+        <h1>Header</h1>
+    </header>
+    <nav class="sidenav col">
+        <ul>
+            <li><a href="#">Lorem</a></li>
+            <li><a href="#">Quidem</a></li>
+            <li><a href="#">Veniam</a></li>
+            <li><a href="#">Fuga</a></li>
+            <li><a href="#">Esse</a></li>
+        </ul>
+    </nav>    
+    <section class="content col">
+        <h1>Lorem ipsum dolor sit amet.</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe itaque id porro similique explicabo velit laboriosam eaque eius impedit enim culpa obcaecati quasi ex animi adipisci nemo perferendis quia mollitia!</p>
+        <p>Nobis dolorum odio assumenda facere eligendi in unde. Tempore expedita fuga dolore iusto cumque ipsa repudiandae nostrum at ad ullam illum voluptatibus et deleniti quod aliquam amet porro repellendus adipisci?</p>
+        <p>Voluptatibus minima aliquid modi nesciunt vitae quos veniam architecto ex earum amet maxime iure dolores eius dolor voluptatem voluptates necessitatibus facere illum dignissimos tempora. Placeat blanditiis doloribus odio ducimus saepe!</p>
+        <p>Magni dolor possimus a ab quam dolorum nostrum aliquid alias veritatis dolores dicta laboriosam atque accusamus mollitia fugit? Ab atque perferendis impedit sit vitae neque earum facilis quia eum provident?</p>
+        <p>Dolores voluptas dicta doloremque similique laudantium nemo architecto adipisci. Sapiente ad tenetur rem voluptas sunt provident adipisci ullam reiciendis veritatis facilis. Quod nihil unde obcaecati libero provident numquam quae quisquam.</p>
+    </section>
+    <footer class="footer col">
+        <p>Footer</p>
+    </footer>
+</div>                     
+
+</body>
+</html>
