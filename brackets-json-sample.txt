@@ -1,0 +1,17 @@
+{
+    "themes.theme": "dark-theme",
+    "linting.collapsed": true,
+    "smartIndent": false,
+    "closeTags": {
+        "whenOpening": false,
+        "whenClosing": true,
+        "indentTags": false
+    },
+    "closeBrackets": true,
+    "showLineNumbers": true,
+    "styleActiveLine": true,
+    "softTabs": true,
+    "spaceUnits": 4,
+    "wordWrap": false,
+    "debug.showErrorsInStatusBar": false
+}
