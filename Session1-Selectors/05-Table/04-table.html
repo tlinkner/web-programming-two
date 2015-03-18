@@ -28,42 +28,34 @@ h2 {
 }
     
 table {
-    margin-left: 4em;
-    margin-bottom: 2.7em;
-    padding: 0;
-    font-size: 1em;
-    font-weight: 400;
-    line-height: 1em;
-    border-collapse: collapse; 
+	margin-left: 4em;
+    margin-bottom: 3em;
+    border-collapse: collapse;
 }
 
-table th, 
-table td {
+td, th {
+    border-top: 1px solid gainsboro;
     padding-top: .5em;
     padding-bottom: .5em;
     width: 16em;
-    border-top: 1px solid gainsboro;
     text-align: left;
+    vertical-align: top;
 }
 
-table th:not(:first-child),
-table td:not(:first-child) {
+td + td,
+th + th {
+    border-left: 1px solid gainsboro;
     padding-left: .5em;
 }
 
-table th:not(:last-child),
-table td:not(:last-child) {
-    border-right: 1px solid gainsboro;
+
+tr:last-child td,
+tr:last-child th {
+    border-bottom: 1px solid gainsboro;
 }
 
-table tr th:first-child,
-table tr td:first-child {
-    font-weight: 600;
-}
-    
-table tr:last-child th, 
-table tr:last-child td {
-    border-bottom: 1px solid gainsboro;
+tr:hover td {
+    background: gainsboro;
 }
 
 </style>
